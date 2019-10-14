@@ -39,6 +39,9 @@
 		5A357FBC234ED655005154A3 /* DProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A357FBB234ED655005154A3 /* DProblemViewController.m */; };
 		5A357FBF234ED679005154A3 /* DNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A357FBE234ED679005154A3 /* DNewsViewController.m */; };
 		5A357FC2234ED697005154A3 /* DPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A357FC1234ED697005154A3 /* DPostViewController.m */; };
+		5A4AA83823544A2D00D0EBA6 /* Problem.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA83723544A2D00D0EBA6 /* Problem.json */; };
+		5A4AA83B23544AAF00D0EBA6 /* DProblemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA83A23544AAF00D0EBA6 /* DProblemModel.m */; };
+		5A4AA83E23544E5200D0EBA6 /* DProblemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA83D23544E5200D0EBA6 /* DProblemCell.m */; };
 		5AB4D677234ED7D1009E4944 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4A9234ED7CF009E4944 /* README.markdown */; };
 		5AB4D678234ED7D1009E4944 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */; };
 		5AB4D679234ED7D1009E4944 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AE234ED7CF009E4944 /* FMDatabaseQueue.m */; };
@@ -384,6 +387,11 @@
 		5A357FBE234ED679005154A3 /* DNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsViewController.m; sourceTree = "<group>"; };
 		5A357FC0234ED697005154A3 /* DPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPostViewController.h; sourceTree = "<group>"; };
 		5A357FC1234ED697005154A3 /* DPostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPostViewController.m; sourceTree = "<group>"; };
+		5A4AA83723544A2D00D0EBA6 /* Problem.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Problem.json; sourceTree = "<group>"; };
+		5A4AA83923544AAF00D0EBA6 /* DProblemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemModel.h; sourceTree = "<group>"; };
+		5A4AA83A23544AAF00D0EBA6 /* DProblemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemModel.m; sourceTree = "<group>"; };
+		5A4AA83C23544E5200D0EBA6 /* DProblemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemCell.h; sourceTree = "<group>"; };
+		5A4AA83D23544E5200D0EBA6 /* DProblemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemCell.m; sourceTree = "<group>"; };
 		5AB4D4A9234ED7CF009E4944 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5AB4D4AD234ED7CF009E4944 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -1409,6 +1417,8 @@
 		5A357FB4234ED628005154A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA83923544AAF00D0EBA6 /* DProblemModel.h */,
+				5A4AA83A23544AAF00D0EBA6 /* DProblemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1416,6 +1426,8 @@
 		5A357FB5234ED628005154A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA83C23544E5200D0EBA6 /* DProblemCell.h */,
+				5A4AA83D23544E5200D0EBA6 /* DProblemCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1423,8 +1435,8 @@
 		5A357FB6234ED628005154A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5A357FBB234ED655005154A3 /* DProblemViewController.m */,
 				5A357FBA234ED655005154A3 /* DProblemViewController.h */,
+				5A357FBB234ED655005154A3 /* DProblemViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2314,6 +2326,7 @@
 		5AB4D7E8234F25D4009E4944 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA83723544A2D00D0EBA6 /* Problem.json */,
 				5AB4D7E9234F25D4009E4944 /* java.json */,
 				5AB4D7EA234F25D4009E4944 /* Ruby.json */,
 				5AB4D7EB234F25D4009E4944 /* information.json */,
@@ -2392,6 +2405,7 @@
 			files = (
 				5AB4D678234ED7D1009E4944 /* LICENSE.txt in Resources */,
 				5AB4D7BF234F15FC009E4944 /* voice4.mp3 in Resources */,
+				5A4AA83823544A2D00D0EBA6 /* Problem.json in Resources */,
 				5AB4D7FA234F25D4009E4944 /* JavaScript.json in Resources */,
 				5AB4D7FD234F25D4009E4944 /* CJ.json in Resources */,
 				5AB4D72C234ED7D1009E4944 /* README.txt in Resources */,
@@ -2542,9 +2556,11 @@
 				5AB4D71C234ED7D1009E4944 /* ViewController+MASAdditions.m in Sources */,
 				5AB4D6A3234ED7D1009E4944 /* AFHTTPRequestOperation.m in Sources */,
 				5AB4D6CB234ED7D1009E4944 /* CALayer+YYWebImage.m in Sources */,
+				5A4AA83E23544E5200D0EBA6 /* DProblemCell.m in Sources */,
 				5AB4D765234ED91B009E4944 /* NSTimer+addition.m in Sources */,
 				5AB4D699234ED7D1009E4944 /* BAGridItemModel.m in Sources */,
 				5AB4D712234ED7D1009E4944 /* MJProperty.m in Sources */,
+				5A4AA83B23544AAF00D0EBA6 /* DProblemModel.m in Sources */,
 				5AB4D762234ED91B009E4944 /* UIBarButtonItem+Extension.m in Sources */,
 				5AB4D68E234ED7D1009E4944 /* MJRefreshFooter.m in Sources */,
 				5AB4D684234ED7D1009E4944 /* UIView+MJExtension.m in Sources */,
