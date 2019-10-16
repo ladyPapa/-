@@ -9,9 +9,12 @@
 #import "DProblemViewController.h"
 #import "DProblemCell.h"
 #import "DProblemModel.h"
+#import "DProblemHeaderView.h"
+#import "DProblemTxtViewController.h"
 
 @interface DProblemViewController()
 
+@property (nonatomic,strong) DProblemHeaderView *tableHeaderView;
 
 @end
 @implementation DProblemViewController
@@ -37,6 +40,10 @@
     }
 }
 
+-(void)initializeTableHeaderView{
+    self.tableView.tableHeaderView = self.tableHeaderView;
+}
+
 #pragma mark - 表格代理方法
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -51,7 +58,22 @@
     
     return 95;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    DProblemTxtViewController *VC = [[DProblemTxtViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    DProblemModel *model = self.listArray[indexPath.row];
+    VC.probleModel = model;
+    [self.navigationController pushViewController:VC animated:YES];
+}
 
+-(DProblemHeaderView *)tableHeaderView{
+    if(!_tableHeaderView){
+        _tableHeaderView = [[DProblemHeaderView alloc]init];
+        _tableHeaderView.frame = CGRectMake(0, 0, kScreenWidth, 200);
+    }
+    return _tableHeaderView;
+}
 @end
 
 

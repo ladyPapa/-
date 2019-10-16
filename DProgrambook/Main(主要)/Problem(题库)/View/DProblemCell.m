@@ -34,14 +34,14 @@
     }];
     
     [self.introduceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.bgView.mas_bottom).offset(10);
-        make.left.mas_equalTo(self.iconImageView.right).offset(10);
+        make.top.mas_equalTo(self.titleLabel.mas_bottom).offset(10);
+        make.left.mas_equalTo(self.iconImageView.mas_right).offset(10);
         make.width.mas_equalTo(kScreenWidth -100);
     }];
     
     [self.indicatorImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(self.bgView.right).offset(-15);
-        make.centerY.mas_equalTo(self.bgView.centerY);
+        make.right.mas_equalTo(self.bgView.mas_right).offset(-15);
+        make.centerY.mas_equalTo(self.bgView.mas_centerY);
         make.size.mas_equalTo(CGSizeMake(40, 40));
     }];
 }
@@ -56,6 +56,7 @@
         _bgView.layer.shadowRadius = 4.0;
         _bgView.layer.cornerRadius = 5.0;
         _bgView.clipsToBounds = NO;
+        _bgView.backgroundColor = [UIColor whiteColor];
         [self addSubview:self.bgView];
     }
     return _bgView;

@@ -42,6 +42,10 @@
 		5A4AA83823544A2D00D0EBA6 /* Problem.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA83723544A2D00D0EBA6 /* Problem.json */; };
 		5A4AA83B23544AAF00D0EBA6 /* DProblemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA83A23544AAF00D0EBA6 /* DProblemModel.m */; };
 		5A4AA83E23544E5200D0EBA6 /* DProblemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA83D23544E5200D0EBA6 /* DProblemCell.m */; };
+		5A4AA8412356AE1200D0EBA6 /* DProblemHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA8402356AE1200D0EBA6 /* DProblemHeaderView.m */; };
+		5A4AA8442357027100D0EBA6 /* DProblemTxtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA8432357027100D0EBA6 /* DProblemTxtViewController.m */; };
+		5A4AA847235703AC00D0EBA6 /* DProblemTxtModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA846235703AC00D0EBA6 /* DProblemTxtModel.m */; };
+		5A4AA84A2357051000D0EBA6 /* DProblemTxtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA8492357051000D0EBA6 /* DProblemTxtCell.m */; };
 		5AB4D677234ED7D1009E4944 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4A9234ED7CF009E4944 /* README.markdown */; };
 		5AB4D678234ED7D1009E4944 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */; };
 		5AB4D679234ED7D1009E4944 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AE234ED7CF009E4944 /* FMDatabaseQueue.m */; };
@@ -392,6 +396,14 @@
 		5A4AA83A23544AAF00D0EBA6 /* DProblemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemModel.m; sourceTree = "<group>"; };
 		5A4AA83C23544E5200D0EBA6 /* DProblemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemCell.h; sourceTree = "<group>"; };
 		5A4AA83D23544E5200D0EBA6 /* DProblemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemCell.m; sourceTree = "<group>"; };
+		5A4AA83F2356AE1200D0EBA6 /* DProblemHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemHeaderView.h; sourceTree = "<group>"; };
+		5A4AA8402356AE1200D0EBA6 /* DProblemHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemHeaderView.m; sourceTree = "<group>"; };
+		5A4AA8422357027100D0EBA6 /* DProblemTxtViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemTxtViewController.h; sourceTree = "<group>"; };
+		5A4AA8432357027100D0EBA6 /* DProblemTxtViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemTxtViewController.m; sourceTree = "<group>"; };
+		5A4AA845235703AC00D0EBA6 /* DProblemTxtModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemTxtModel.h; sourceTree = "<group>"; };
+		5A4AA846235703AC00D0EBA6 /* DProblemTxtModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemTxtModel.m; sourceTree = "<group>"; };
+		5A4AA8482357051000D0EBA6 /* DProblemTxtCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemTxtCell.h; sourceTree = "<group>"; };
+		5A4AA8492357051000D0EBA6 /* DProblemTxtCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemTxtCell.m; sourceTree = "<group>"; };
 		5AB4D4A9234ED7CF009E4944 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5AB4D4AD234ED7CF009E4944 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -1419,6 +1431,8 @@
 			children = (
 				5A4AA83923544AAF00D0EBA6 /* DProblemModel.h */,
 				5A4AA83A23544AAF00D0EBA6 /* DProblemModel.m */,
+				5A4AA845235703AC00D0EBA6 /* DProblemTxtModel.h */,
+				5A4AA846235703AC00D0EBA6 /* DProblemTxtModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1428,6 +1442,10 @@
 			children = (
 				5A4AA83C23544E5200D0EBA6 /* DProblemCell.h */,
 				5A4AA83D23544E5200D0EBA6 /* DProblemCell.m */,
+				5A4AA83F2356AE1200D0EBA6 /* DProblemHeaderView.h */,
+				5A4AA8402356AE1200D0EBA6 /* DProblemHeaderView.m */,
+				5A4AA8482357051000D0EBA6 /* DProblemTxtCell.h */,
+				5A4AA8492357051000D0EBA6 /* DProblemTxtCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1437,6 +1455,8 @@
 			children = (
 				5A357FBA234ED655005154A3 /* DProblemViewController.h */,
 				5A357FBB234ED655005154A3 /* DProblemViewController.m */,
+				5A4AA8422357027100D0EBA6 /* DProblemTxtViewController.h */,
+				5A4AA8432357027100D0EBA6 /* DProblemTxtViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2503,6 +2523,7 @@
 				5AB4D6E8234ED7D1009E4944 /* UIApplication+YYAdd.m in Sources */,
 				5AB4D6FB234ED7D1009E4944 /* NSDate+YYAdd.m in Sources */,
 				5AB4D719234ED7D1009E4944 /* MJFoundation.m in Sources */,
+				5A4AA84A2357051000D0EBA6 /* DProblemTxtCell.m in Sources */,
 				5AB4D711234ED7D1009E4944 /* NSObject+MJKeyValue.m in Sources */,
 				5AB4D6D9234ED7D1009E4944 /* YYTextDebugOption.m in Sources */,
 				5AB4D67D234ED7D1009E4944 /* FMResultSet.m in Sources */,
@@ -2545,6 +2566,7 @@
 				5AB4D6EE234ED7D1009E4944 /* UIGestureRecognizer+YYAdd.m in Sources */,
 				5AB4D6F5234ED7D1009E4944 /* NSObject+YYAdd.m in Sources */,
 				5AB4D6A5234ED7D1009E4944 /* AFSecurityPolicy.m in Sources */,
+				5A4AA847235703AC00D0EBA6 /* DProblemTxtModel.m in Sources */,
 				5AB4D6D7234ED7D1009E4944 /* YYTextSelectionView.m in Sources */,
 				5AB4D6B6234ED7D1009E4944 /* SDWebImagePrefetcher.m in Sources */,
 				5A357F9C234ED453005154A3 /* DBaseModel.m in Sources */,
@@ -2606,6 +2628,7 @@
 				5AB4D67E234ED7D1009E4944 /* UIScrollView+MJRefresh.m in Sources */,
 				5AB4D739234ED7D1009E4944 /* UIView+LBFrame.m in Sources */,
 				5AB4D6F6234ED7D1009E4944 /* NSData+YYAdd.m in Sources */,
+				5A4AA8442357027100D0EBA6 /* DProblemTxtViewController.m in Sources */,
 				5AB4D716234ED7D1009E4944 /* NSObject+MJClass.m in Sources */,
 				5AB4D706234ED7D1009E4944 /* YYTransaction.m in Sources */,
 				5A357F62234ED0D1005154A3 /* DTabBarViewController.m in Sources */,
@@ -2659,6 +2682,7 @@
 				5A357F9D234ED453005154A3 /* DPageModel.m in Sources */,
 				5A357F9E234ED453005154A3 /* DTableViewCell.m in Sources */,
 				5AB4D77B234F0A24009E4944 /* DChapterView.m in Sources */,
+				5A4AA8412356AE1200D0EBA6 /* DProblemHeaderView.m in Sources */,
 				5AB4D6BC234ED7D1009E4944 /* UIButton+WebCache.m in Sources */,
 				5AB4D709234ED7D1009E4944 /* YYGestureRecognizer.m in Sources */,
 				5AB4D6DD234ED7D1009E4944 /* NSParagraphStyle+YYText.m in Sources */,
