@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 //用法
 @property (nonatomic,strong) NSString *directions;
 //称号
-@property (nonatomic,strong) NSString *donor;
+@property (nonatomic,strong) NSString *honor;
 //封面
 @property (nonatomic,strong) NSString *backgroundImg;
 

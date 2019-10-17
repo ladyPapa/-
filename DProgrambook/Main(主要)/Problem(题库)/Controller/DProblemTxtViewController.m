@@ -9,9 +9,11 @@
 #import "DProblemTxtViewController.h"
 #import "DProblemTxtModel.h"
 #import "DProblemTxtCell.h"
+#import "DProblemTxtHeaderView.h"
 
 @interface DProblemTxtViewController ()
 
+@property (nonatomic,strong) DProblemTxtHeaderView *tableHerderView;
 @end
 
 @implementation DProblemTxtViewController
@@ -47,6 +49,14 @@
     
     
 }
+
+//设置头部
+-(void)initializeTableHeaderView{
+    
+    self.tableView.tableHeaderView = self.tableHerderView;
+    [self.tableHerderView setData:self.probleModel];
+    [self.tableHerderView.backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+}
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
@@ -78,5 +88,30 @@
     return model.cellHeight;
     
     
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    
+}
+//拖动头部图片变化
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    float offset = scrollView.contentOffset.y;
+    if(offset<=0)
+    {
+        CGRect rect = self.tableHerderView.frame;
+        rect.origin.y = offset;
+        rect.size.height = -offset +240;
+        self.tableHerderView.bgImageView.frame = rect;
+    }
+}
+
+-(DProblemTxtHeaderView *)tableHerderView{
+    if(!_tableHerderView){
+        _tableHerderView = [[DProblemTxtHeaderView alloc]init];
+        _tableHerderView.frame = CGRectMake(0, 0, kScreenWidth, 320);
+    }
+    return _tableHerderView;
 }
 @end
