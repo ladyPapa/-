@@ -47,6 +47,8 @@
 		5A4AA847235703AC00D0EBA6 /* DProblemTxtModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA846235703AC00D0EBA6 /* DProblemTxtModel.m */; };
 		5A4AA84A2357051000D0EBA6 /* DProblemTxtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA8492357051000D0EBA6 /* DProblemTxtCell.m */; };
 		5A4AA84D2357157400D0EBA6 /* DProblemTxtHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA84C2357157400D0EBA6 /* DProblemTxtHeaderView.m */; };
+		5A4AA864235872BD00D0EBA6 /* DNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA863235872BD00D0EBA6 /* DNewsModel.m */; };
+		5A4AA867235873A200D0EBA6 /* DNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA866235873A200D0EBA6 /* DNewsCell.m */; };
 		5AB4D677234ED7D1009E4944 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4A9234ED7CF009E4944 /* README.markdown */; };
 		5AB4D678234ED7D1009E4944 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */; };
 		5AB4D679234ED7D1009E4944 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AE234ED7CF009E4944 /* FMDatabaseQueue.m */; };
@@ -407,6 +409,10 @@
 		5A4AA8492357051000D0EBA6 /* DProblemTxtCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemTxtCell.m; sourceTree = "<group>"; };
 		5A4AA84B2357157400D0EBA6 /* DProblemTxtHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DProblemTxtHeaderView.h; sourceTree = "<group>"; };
 		5A4AA84C2357157400D0EBA6 /* DProblemTxtHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DProblemTxtHeaderView.m; sourceTree = "<group>"; };
+		5A4AA862235872BD00D0EBA6 /* DNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNewsModel.h; sourceTree = "<group>"; };
+		5A4AA863235872BD00D0EBA6 /* DNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsModel.m; sourceTree = "<group>"; };
+		5A4AA865235873A200D0EBA6 /* DNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNewsCell.h; sourceTree = "<group>"; };
+		5A4AA866235873A200D0EBA6 /* DNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsCell.m; sourceTree = "<group>"; };
 		5AB4D4A9234ED7CF009E4944 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5AB4D4AD234ED7CF009E4944 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -1409,6 +1415,8 @@
 		5A357FAE234ED61D005154A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA862235872BD00D0EBA6 /* DNewsModel.h */,
+				5A4AA863235872BD00D0EBA6 /* DNewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1416,6 +1424,8 @@
 		5A357FAF234ED61D005154A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA865235873A200D0EBA6 /* DNewsCell.h */,
+				5A4AA866235873A200D0EBA6 /* DNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2482,6 +2492,7 @@
 				5A357F83234ED156005154A3 /* DWaveView.m in Sources */,
 				5AB4D718234ED7D1009E4944 /* MJPropertyKey.m in Sources */,
 				5AB4D6ED234ED7D1009E4944 /* UIBarButtonItem+YYAdd.m in Sources */,
+				5A4AA867235873A200D0EBA6 /* DNewsCell.m in Sources */,
 				5AB4D688234ED7D1009E4944 /* MJRefreshAutoStateFooter.m in Sources */,
 				5AB4D6A6234ED7D1009E4944 /* FCUUID.m in Sources */,
 				5AB4D68F234ED7D1009E4944 /* MJRefreshHeader.m in Sources */,
@@ -2560,6 +2571,7 @@
 				5AB4D704234ED7D1009E4944 /* YYThreadSafeDictionary.m in Sources */,
 				5AB4D69B234ED7D1009E4944 /* BAGridViewTypeTitleDescCell.m in Sources */,
 				5AB4D6BA234ED7D1009E4944 /* UIImageView+WebCache.m in Sources */,
+				5A4AA864235872BD00D0EBA6 /* DNewsModel.m in Sources */,
 				5AB4D6AA234ED7D1009E4944 /* YLImageView.m in Sources */,
 				5AB4D6CD234ED7D1009E4944 /* YYWebImageOperation.m in Sources */,
 				5A4AA84D2357157400D0EBA6 /* DProblemTxtHeaderView.m in Sources */,
