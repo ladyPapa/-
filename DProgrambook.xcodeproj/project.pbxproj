@@ -49,6 +49,7 @@
 		5A4AA84D2357157400D0EBA6 /* DProblemTxtHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA84C2357157400D0EBA6 /* DProblemTxtHeaderView.m */; };
 		5A4AA864235872BD00D0EBA6 /* DNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA863235872BD00D0EBA6 /* DNewsModel.m */; };
 		5A4AA867235873A200D0EBA6 /* DNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA866235873A200D0EBA6 /* DNewsCell.m */; };
+		5A4AA86D235D609200D0EBA6 /* DNewsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA86C235D609200D0EBA6 /* DNewsHeaderView.m */; };
 		5AB4D677234ED7D1009E4944 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4A9234ED7CF009E4944 /* README.markdown */; };
 		5AB4D678234ED7D1009E4944 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */; };
 		5AB4D679234ED7D1009E4944 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AE234ED7CF009E4944 /* FMDatabaseQueue.m */; };
@@ -413,6 +414,8 @@
 		5A4AA863235872BD00D0EBA6 /* DNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsModel.m; sourceTree = "<group>"; };
 		5A4AA865235873A200D0EBA6 /* DNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNewsCell.h; sourceTree = "<group>"; };
 		5A4AA866235873A200D0EBA6 /* DNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsCell.m; sourceTree = "<group>"; };
+		5A4AA86B235D609200D0EBA6 /* DNewsHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNewsHeaderView.h; sourceTree = "<group>"; };
+		5A4AA86C235D609200D0EBA6 /* DNewsHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsHeaderView.m; sourceTree = "<group>"; };
 		5AB4D4A9234ED7CF009E4944 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5AB4D4AD234ED7CF009E4944 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -1426,6 +1429,8 @@
 			children = (
 				5A4AA865235873A200D0EBA6 /* DNewsCell.h */,
 				5A4AA866235873A200D0EBA6 /* DNewsCell.m */,
+				5A4AA86B235D609200D0EBA6 /* DNewsHeaderView.h */,
+				5A4AA86C235D609200D0EBA6 /* DNewsHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2618,6 +2623,7 @@
 				5AB4D6E7234ED7D1009E4944 /* UIDevice+YYAdd.m in Sources */,
 				5AB4D71A234ED7D1009E4944 /* FXBlurView.m in Sources */,
 				5AB4D6DE234ED7D1009E4944 /* YYTextParser.m in Sources */,
+				5A4AA86D235D609200D0EBA6 /* DNewsHeaderView.m in Sources */,
 				5AB4D69A234ED7D1009E4944 /* BAGridView.m in Sources */,
 				5AB4D685234ED7D1009E4944 /* MJRefreshBackGifFooter.m in Sources */,
 				5AB4D6E4234ED7D1009E4944 /* UITextField+YYAdd.m in Sources */,

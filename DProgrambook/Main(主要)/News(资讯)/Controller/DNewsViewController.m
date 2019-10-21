@@ -9,10 +9,13 @@
 #import "DNewsViewController.h"
 #import "DNewsModel.h"
 #import "DNewsCell.h"
+#import "DNewsHeaderView.h"
 
 @interface DNewsViewController()
 
 @property (nonatomic,strong) NSMutableArray *bannerArray;
+
+@property (nonatomic,strong) DNewsHeaderView *tableHeaderView;
 @end
 
 @implementation DNewsViewController
@@ -34,6 +37,12 @@
     
 }
 
+//头部
+-(void)initializeTableHeaderView{
+    self.tableView.tableHeaderView = self.tableHeaderView;
+    self.tableHeaderView.urlImgs = self.bannerArray;
+    [self.tableHeaderView.collectionView reloadData];
+}
 
 #pragma mark - 共享方法
 //数据处理
@@ -80,6 +89,15 @@
     return model.cellHeight;
 }
 
+
+- (DNewsHeaderView *)tableHeaderView{
+    if(!_tableHeaderView){
+        _tableHeaderView =[[DNewsHeaderView alloc] initWithFrame:CGRectMake(0, 100,kScreenWidth, 160) line:15.0 showLine: 10.0 cellMidSize:CGSizeMake(kScreenWidth-50, 110.0) zoom:0.8];
+        _tableHeaderView.cellCornerRadius = 4;
+        _tableHeaderView.placeHolderImage = ImageNamed(@"mohu");
+    }
+    return _tableHeaderView;
+}
 - (NSMutableArray *)bannerArray {
     if (_bannerArray == nil) {
         _bannerArray = [NSMutableArray array];
