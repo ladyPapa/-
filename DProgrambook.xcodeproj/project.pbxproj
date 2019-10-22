@@ -50,6 +50,8 @@
 		5A4AA864235872BD00D0EBA6 /* DNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA863235872BD00D0EBA6 /* DNewsModel.m */; };
 		5A4AA867235873A200D0EBA6 /* DNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA866235873A200D0EBA6 /* DNewsCell.m */; };
 		5A4AA86D235D609200D0EBA6 /* DNewsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA86C235D609200D0EBA6 /* DNewsHeaderView.m */; };
+		5A4AA870235EA1A300D0EBA6 /* DPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA86F235EA1A300D0EBA6 /* DPostModel.m */; };
+		5A4AA873235EAABC00D0EBA6 /* DPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA872235EAABC00D0EBA6 /* DPostTableViewCell.m */; };
 		5AB4D677234ED7D1009E4944 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4A9234ED7CF009E4944 /* README.markdown */; };
 		5AB4D678234ED7D1009E4944 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */; };
 		5AB4D679234ED7D1009E4944 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AE234ED7CF009E4944 /* FMDatabaseQueue.m */; };
@@ -416,6 +418,10 @@
 		5A4AA866235873A200D0EBA6 /* DNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsCell.m; sourceTree = "<group>"; };
 		5A4AA86B235D609200D0EBA6 /* DNewsHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNewsHeaderView.h; sourceTree = "<group>"; };
 		5A4AA86C235D609200D0EBA6 /* DNewsHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNewsHeaderView.m; sourceTree = "<group>"; };
+		5A4AA86E235EA1A300D0EBA6 /* DPostModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPostModel.h; sourceTree = "<group>"; };
+		5A4AA86F235EA1A300D0EBA6 /* DPostModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPostModel.m; sourceTree = "<group>"; };
+		5A4AA871235EAABC00D0EBA6 /* DPostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPostTableViewCell.h; sourceTree = "<group>"; };
+		5A4AA872235EAABC00D0EBA6 /* DPostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPostTableViewCell.m; sourceTree = "<group>"; };
 		5AB4D4A9234ED7CF009E4944 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5AB4D4AD234ED7CF009E4944 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -1254,7 +1260,6 @@
 			children = (
 				5A357F84234ED453005154A3 /* Controller */,
 				5A357F8B234ED453005154A3 /* Model */,
-				5A357F90234ED453005154A3 /* View */,
 			);
 			path = "Base(基础类)";
 			sourceTree = "<group>";
@@ -1334,6 +1339,7 @@
 		5A357F8B234ED453005154A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5A357F90234ED453005154A3 /* View */,
 				5A357F8C234ED453005154A3 /* DBaseModel.m */,
 				5A357F8D234ED453005154A3 /* DPageModel.m */,
 				5A357F8E234ED453005154A3 /* DBaseModel.h */,
@@ -1354,7 +1360,8 @@
 				5A357F97234ED453005154A3 /* DTextView.h */,
 				5A357F98234ED453005154A3 /* DIndicatorView.m */,
 			);
-			path = View;
+			name = View;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		5A357FA2234ED50C005154A3 /* Controller */ = {
@@ -1404,6 +1411,8 @@
 		5A357FAB234ED612005154A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA86E235EA1A300D0EBA6 /* DPostModel.h */,
+				5A4AA86F235EA1A300D0EBA6 /* DPostModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1411,6 +1420,8 @@
 		5A357FAC234ED612005154A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA871235EAABC00D0EBA6 /* DPostTableViewCell.h */,
+				5A4AA872235EAABC00D0EBA6 /* DPostTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2519,6 +2530,7 @@
 				5AB4D6D8234ED7D1009E4944 /* YYTextKeyboardManager.m in Sources */,
 				5AB4D6E2234ED7D1009E4944 /* YYTextArchiver.m in Sources */,
 				5AB4D69D234ED7D1009E4944 /* AFURLResponseSerialization.m in Sources */,
+				5A4AA870235EA1A300D0EBA6 /* DPostModel.m in Sources */,
 				5AB4D69C234ED7D1009E4944 /* NSString+BAGridView.m in Sources */,
 				5AB4D6B0234ED7D1009E4944 /* SDWebImageDecoder.m in Sources */,
 				5AB4D6A0234ED7D1009E4944 /* AFURLSessionManager.m in Sources */,
@@ -2717,6 +2729,7 @@
 				5A357EF7234C3E3D005154A3 /* AppDelegate.m in Sources */,
 				5AB4D6FA234ED7D1009E4944 /* NSObject+YYAddForARC.m in Sources */,
 				5AB4D73F234ED7D1009E4944 /* LBTapDetectingImageView.m in Sources */,
+				5A4AA873235EAABC00D0EBA6 /* DPostTableViewCell.m in Sources */,
 				5AB4D698234ED7D1009E4944 /* BAGridView_Config.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
