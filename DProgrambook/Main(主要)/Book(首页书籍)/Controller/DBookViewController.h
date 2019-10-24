@@ -1,12 +1,12 @@
 //
-//  DBook.h
+//  DBookViewController.h
 //  DProgrambook
 //
-//  Created by titi on 2019/10/10.
-//  Copyright © 2019 xushaocong. All rights reserved.
+//  Created by DUCHENGWEN on 2019/7/31.
+//  Copyright © 2019 liujiliu. All rights reserved.
 //
 
-#import "DTableViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -52,6 +52,7 @@
 		5A4AA86D235D609200D0EBA6 /* DNewsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA86C235D609200D0EBA6 /* DNewsHeaderView.m */; };
 		5A4AA870235EA1A300D0EBA6 /* DPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA86F235EA1A300D0EBA6 /* DPostModel.m */; };
 		5A4AA873235EAABC00D0EBA6 /* DPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA872235EAABC00D0EBA6 /* DPostTableViewCell.m */; };
+		5A4AA8762361480D00D0EBA6 /* DBookTxtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4AA8752361480D00D0EBA6 /* DBookTxtViewController.m */; };
 		5AB4D677234ED7D1009E4944 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4A9234ED7CF009E4944 /* README.markdown */; };
 		5AB4D678234ED7D1009E4944 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */; };
 		5AB4D679234ED7D1009E4944 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB4D4AE234ED7CF009E4944 /* FMDatabaseQueue.m */; };
@@ -422,6 +423,8 @@
 		5A4AA86F235EA1A300D0EBA6 /* DPostModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPostModel.m; sourceTree = "<group>"; };
 		5A4AA871235EAABC00D0EBA6 /* DPostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPostTableViewCell.h; sourceTree = "<group>"; };
 		5A4AA872235EAABC00D0EBA6 /* DPostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPostTableViewCell.m; sourceTree = "<group>"; };
+		5A4AA8742361480D00D0EBA6 /* DBookTxtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBookTxtViewController.h; sourceTree = "<group>"; };
+		5A4AA8752361480D00D0EBA6 /* DBookTxtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBookTxtViewController.m; sourceTree = "<group>"; };
 		5AB4D4A9234ED7CF009E4944 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		5AB4D4AA234ED7CF009E4944 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5AB4D4AD234ED7CF009E4944 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -1367,6 +1370,8 @@
 		5A357FA2234ED50C005154A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5A4AA8742361480D00D0EBA6 /* DBookTxtViewController.h */,
+				5A4AA8752361480D00D0EBA6 /* DBookTxtViewController.m */,
 				5A357FA5234ED565005154A3 /* DBookViewController.h */,
 				5A357FA6234ED565005154A3 /* DBookViewController.m */,
 			);
@@ -2643,6 +2648,7 @@
 				5AB4D76B234ED91B009E4944 /* DInterfaceUrl.m in Sources */,
 				5AB4D6D2234ED7D1009E4944 /* YYTextContainerView.m in Sources */,
 				5A357F61234ED0D1005154A3 /* DLoginViewController.m in Sources */,
+				5A4AA8762361480D00D0EBA6 /* DBookTxtViewController.m in Sources */,
 				5AB4D689234ED7D1009E4944 /* MJRefreshAutoGifFooter.m in Sources */,
 				5AB4D6B4234ED7D1009E4944 /* UIImage+MultiFormat.m in Sources */,
 				5AB4D6EA234ED7D1009E4944 /* UIScrollView+YYAdd.m in Sources */,
